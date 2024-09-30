@@ -1,3 +1,7 @@
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+import "../global.scss";
+import { Container } from "react-bootstrap";
 
 
 export const metadata = {
@@ -9,9 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-        <h2>HEADER</h2>
-        {children}
-        <h3>FOOTER</h3>
+        <Header/>
+        <Container>{children}</Container>
+        <Footer/>
       </body>
     </html>
   );
